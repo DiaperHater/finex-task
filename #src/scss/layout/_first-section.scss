@@ -1,0 +1,40 @@
+.first-section {
+	position: relative;
+	padding-top: 130px;
+	overflow: hidden;
+}
+
+.first-section__bacground {
+	position: absolute;
+	top: -40px;
+	left: 44%;
+	width: 85.937%;
+	height: 0;
+	padding-bottom: 54.687%;
+	background: url("../img/bg-1.png") no-repeat center;
+	background-size: contain;
+}
+
+.first-section__wrapper {
+	display: flex;
+	column-gap: 15px;
+}
+
+.first-section__content {
+	flex: 0 0 44.827%;
+}
+
+.first-section__picture {
+	position: relative;
+	flex: 0 0 38.75vw;
+	height: 0;
+	padding-bottom: 37.76vw;
+}
+
+.first-section__picture-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
