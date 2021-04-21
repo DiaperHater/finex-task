@@ -1,0 +1,55 @@
+.header__wrapper {
+	display: flex;
+	height: 110px;
+	align-items: center;
+}
+
+.header__logo {
+	position: relative;
+	top: -6px;
+}
+
+.header__menu {
+	display: flex;
+
+	&> li{
+		margin-left: 50px;
+	}
+}
+
+.header__link {
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+	text-transform: capitalize;
+	transition: .2s all linear;
+}
+
+.header__link:hover {
+	color: $color-2;
+	border-bottom: 1px solid $color-2;
+}
+
+.header__controls {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.header__icon-link {
+	display: block;
+	width: 12px;
+	height: 11px;
+	margin:0 12px;
+
+	&:last-child {
+		border-left: 1px solid #00000052;
+	}
+}
+
+.header__controls-button {
+	margin-left: 8px;
+}
+
+
+

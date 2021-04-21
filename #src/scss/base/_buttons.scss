@@ -1,0 +1,16 @@
+.button {
+
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: linear-gradient(45deg, #2453e7 0%, #9678e5 75%);
+	padding: 16px 26px;
+	border-radius: 25px;
+	transition: .2s all linear;
+
+	&:hover {
+		filter: drop-shadow(3px 3px 2px #0005);
+	}
+}
