@@ -1,5 +1,7 @@
 .button {
-
+	display: flex;
+	align-items: center;
+	column-gap: 1.3rem;
 	color: #fff;
 	font-size: 1.2rem;
 	font-weight: normal;
@@ -12,5 +14,19 @@
 
 	&:hover {
 		filter: drop-shadow(3px 3px 2px #0005);
+		transform: scale(1.1);
 	}
 }
+
+.button--transparent {
+	background: transparent;
+	color: $color-2;
+	padding: 0;
+
+	& .button__text {
+		border-bottom: .1rem solid $color-2;
+		padding-bottom: .2rem;
+	}
+
+}
+

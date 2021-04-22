@@ -1,7 +1,8 @@
 .first-section {
 	position: relative;
-	padding-top: 130px;
 	overflow: hidden;
+	padding-top: 130px;
+	padding-bottom: 130px;
 }
 
 .first-section__bacground {
@@ -36,5 +37,34 @@
 	top: 0;
 	left: 0;
 }
+
+.first-section__pre-title {
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	color: $color-2;
+	margin-bottom: 3.5rem;
+}
+
+.first-section__title {
+	font-weight: 600;
+	font-size: 5.2rem;
+	line-height: 6.5rem;
+	margin-bottom: 5rem;
+}	
+
+.first-section__description {
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	color: $color-3;
+	margin-bottom: 6rem;
+}
+
+.first-section__buttons {
+	display: flex;
+	column-gap: 2rem;
+}
+
 
 
