@@ -215,5 +215,119 @@
 	.footer__sub-link:first-child {
 		padding-left: 0;
 	}
+}
+
+@media screen and (max-width: 586px) {
+	
+	.header__wrapper {
+		justify-content: space-between;
+	}
+
+	.header__controls {
+		display: none;
+	}
+
+	.header__nav {
+		width: 30px;
+		height: 30px;
+	}
+
+	.first-section__wrapper {
+		row-gap: 20px;
+	}
+
+	.first-section__title {
+		font-size: 7vw;
+		line-height: 9.5vw;
+	}
+
+	.first-section__buttons {
+		justify-content: center;
+	}
+
+	.about-us__description {
+		width: 100%;
+	}
+
+	.about-us__card {
+		width: 100%;
+	}
+
+	.courses-collection__title-block {
+		flex-flow: column;
+	    row-gap: 15px;
+	    margin-bottom: 40px;
+	}
+
+	.courses-collection__title {
+		align-self: flex-start;
+		font-size: 7vw;
+		line-height: 9vw;
+	}
+
+	.courses-collection__card {
+		width: 100%;
+	}
+
+	.get-started {
+		margin-bottom: 100px;
+	}
+
+	.get-started__title {
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+
+	.get-started__form {
+		flex-flow: column;
+	    row-gap: 30px;
+	    border-radius: 5px;
+	}
+
+	.form__input {
+		width: 100%;
+	}
+
+	.form__button {
+		display: flex;
+	    justify-content: center;
+	    border-radius: 5px;
+	}
+
+	.footer__columns {
+		flex-flow: column;
+	    row-gap: 30px;
+	    padding-bottom: 0;
+	}
+
+	.footer__column {
+		width: 100%;
+	}
+
+	.footer__column:first-child {
+		position: static;
+	    flex-flow: column;
+	    order: 6;
+	}
+
+	.footer__adress-and-contacts {
+		margin-bottom: 1rem;
+	}
+
+	.footer__contacts {
+		margin-bottom: 1rem;
+	}
+
+	.footer__column-title {
+		margin-bottom: 7px;
+	}
+
+	.footer__sub-link {
+		font-size: 1rem;
+	}
+
+	.footer__design {
+		font-size: 1rem;
+	}
 
 }
