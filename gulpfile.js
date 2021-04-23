@@ -119,12 +119,6 @@ function fonts() {
 		.pipe(dest(path.dist.fonts));
 }
 
-gulp.task('otf2ttf', () => {
-	return src([srcDir + '/fonts/*.otf'])
-		.pipe( fonter({formats: ['ttf']}) )
-		.pipe(dest(srcDir + '/fonts/'));
-});
-
 function clean(params) {
 	return del([path.clean.html, path.clean.css, path.clean.js, path.clean.img]);
 }
@@ -149,6 +143,12 @@ gulp.task('imagemin', ()=>{
 		})
 	)
 	.pipe(dest(path.dist.img));
+});
+
+gulp.task('otf2ttf', () => {
+	return src([srcDir + '/fonts/*.otf'])
+		.pipe( fonter({formats: ['ttf']}) )
+		.pipe(dest(srcDir + '/fonts/'));
 });
 
 //Exports
