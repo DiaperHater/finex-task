@@ -22,7 +22,7 @@
 
 .about-us__cards {
 	display: flex;
-	column-gap: 35px;
+	justify-content: center;	
 }
 
 .about-us__card {
@@ -31,6 +31,11 @@
 	flex-flow: column;
 	align-items: center;
 	text-align: center;
+	margin-left: 35px;	
+
+	&:first-child {
+		margin-left: 0;	
+	}
 }
 
 .about-us__card-icon-wrapper {
@@ -105,6 +110,7 @@
 	line-height: 2.6rem;
 	font-weight: 300;
 	color: #727272;
+	margin-top: auto;	
 }
 
 .about-us__cards-separator {

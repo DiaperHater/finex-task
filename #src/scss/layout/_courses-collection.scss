@@ -32,7 +32,6 @@
 
 .courses-collection__cards-row {
 	display: flex;
-	column-gap: 45px;
 	justify-content: center;
 	
 	&:first-child {
@@ -51,9 +50,14 @@
 	text-align: center;
 	padding: 20px;
 	border-radius: 5px;
+	margin-left: 45px;	
 	overflow: hidden;
 	box-shadow: 20px 20px 15px #6969691a;
 	cursor: pointer;
+
+	&:first-child {
+		margin-left: 0;	
+	}
 
 	&::before,
 	&::after {

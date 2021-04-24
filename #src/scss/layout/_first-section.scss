@@ -18,7 +18,6 @@
 
 .first-section__wrapper {
 	display: flex;
-	column-gap: 15px;
 }
 
 .first-section__content {
@@ -30,6 +29,7 @@
 	flex: 0 0 38.75vw;
 	height: 0;
 	padding-bottom: 37.76vw;
+	margin-left: 15px;	
 }
 
 .first-section__picture-image {
@@ -63,7 +63,10 @@
 
 .first-section__buttons {
 	display: flex;
-	column-gap: 2rem;
+}
+
+.first-section__button {
+	margin-right: 2rem;	
 }
 
 
