@@ -6,8 +6,9 @@ const headerMenu = document.querySelector('.jsHederMenu');
 const body = document.querySelector('.body');
 
 burgerBtn.addEventListener('click', ()=> {
-	if (screen.width <= 1024) {
-
+	
+	if (window.innerWidth <= 1024) {
+	
 		if(headerMenu.classList.contains('mobile-menu--active')) {
 			body.style.overflow='auto';
 			headerMenu.classList.remove('mobile-menu--active');
