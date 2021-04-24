@@ -72,7 +72,6 @@
 	    flex-flow: column;
 	    align-items: center;
 	    justify-content: flex-start;
-	    row-gap: 30px;
 	    z-index: -1;
 	    padding: 100px 0 60px;
 	    transform: translateX(-200%);
@@ -80,7 +79,7 @@
 
 	    &> li {
 	    	margin-left: 0;
-	    	margin-bottom: 1vw;
+	    	margin-bottom: 40px;
 	    }
 
 	    &.mobile-menu--active {
@@ -94,15 +93,8 @@
 	    color: #fe688b;
 	    border-bottom: 2px solid #124ee8;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-	html {
-		font-size: 9px;
-	}
-
-	.first-section {
+    .first-section {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
@@ -123,11 +115,20 @@
 		width: 55%;
 		padding-bottom: 55%;
 		flex: none;
+		margin-left: 0;	
 	}
 
 	.first-section__picture-image {
 		width: 100%;
 	}
+}
+
+@media screen and (max-width: 768px) {
+
+	html {
+		font-size: 9px;
+	}
+
 
 	//About us section
 	.about-us {
@@ -145,6 +146,7 @@
 
 	.about-us__card {
 		width: 50%;
+		margin-left: 0;	
 	}
 
 	.about-us__card-icon-wrapper {
@@ -176,12 +178,17 @@
 	.courses-collection__cards-row {
 		flex-flow: column;
 	    align-items: center;
-	    row-gap: 30px;
-	    margin-bottom: 30px;
+	    margin-bottom: 0;
+	}
+
+	.courses-collection__cards-row:first-child {
+		margin-bottom: 0;
 	}
 
 	.courses-collection__card {
 		width: 70%;
+		margin-left: 0;	
+		margin-bottom: 30px;
 	}
 
 	//Footer
@@ -205,11 +212,14 @@
 
 	.footer__sub {
 		flex-flow: column;
-		row-gap: 20px;
 	}
 
 	.footer__design {
 		order: 1;
+	}
+
+	.footer__sub-link {
+		margin-bottom: 20px;	
 	}
 
 	.footer__sub-link:first-child {
@@ -232,8 +242,8 @@
 		height: 30px;
 	}
 
-	.first-section__wrapper {
-		row-gap: 20px;
+	.first-section__picture {
+		margin-bottom: 20px;
 	}
 
 	.first-section__title {
@@ -243,6 +253,10 @@
 
 	.first-section__buttons {
 		justify-content: center;
+	}
+
+	.first-section__button {
+		font-size: 	1rem;
 	}
 
 	.about-us__description {
@@ -255,7 +269,6 @@
 
 	.courses-collection__title-block {
 		flex-flow: column;
-	    row-gap: 15px;
 	    margin-bottom: 40px;
 	}
 
@@ -263,6 +276,7 @@
 		align-self: flex-start;
 		font-size: 7vw;
 		line-height: 9vw;
+		margin-bottom: 15px;	
 	}
 
 	.courses-collection__card {
@@ -280,12 +294,12 @@
 
 	.get-started__form {
 		flex-flow: column;
-	    row-gap: 30px;
 	    border-radius: 5px;
 	}
 
 	.form__input {
 		width: 100%;
+		margin-bottom: 	30px;
 	}
 
 	.form__button {
@@ -296,12 +310,13 @@
 
 	.footer__columns {
 		flex-flow: column;
-	    row-gap: 30px;
 	    padding-bottom: 0;
+	    margin-bottom: 0;	
 	}
 
 	.footer__column {
 		width: 100%;
+		margin-bottom: 30px;
 	}
 
 	.footer__column:first-child {
