@@ -12,7 +12,7 @@
 	transition: .2s all linear;
 
 	&:hover {
-		filter: drop-shadow(3px 3px 2px #0005);
+		box-shadow: 3px 3px 2px #0005;
 	}
 }
 
@@ -24,6 +24,11 @@
 	& .button__text {
 		border-bottom: .1rem solid $color-2;
 		padding-bottom: .2rem;
+	}
+
+	&:hover {
+		filter: drop-shadow(3px 3px 2px #0005);
+		box-shadow: none;
 	}
 
 }
